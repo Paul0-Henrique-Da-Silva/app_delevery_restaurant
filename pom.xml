@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.algaworks</groupId>
-	<artifactId>algafood-api</artifactId>
+	<groupId>com.yourfood</groupId>
+	<artifactId>restaurant-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>algafood-api</name>
+	<name>restaurant-api</name>
 	<description>API de delivery de comida</description>
 
 	<properties>
