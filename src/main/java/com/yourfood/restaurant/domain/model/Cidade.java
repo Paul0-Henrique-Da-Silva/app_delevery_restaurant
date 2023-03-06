@@ -3,16 +3,12 @@ package com.yourfood.restaurant.domain.model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-public class Estado {
+public class Cidade {
 
     @EqualsAndHashCode.Include
     @Id
@@ -21,5 +17,8 @@ public class Estado {
 
     @Column(nullable = false)
     private String nome;
+
+    @ManyToOne
+    private Estado estado;
 
 }
